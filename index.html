@@ -1,53 +1,259 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
+ 
 <head>
-
 <meta charset="UTF-8">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
 <title>Rebels & Queens</title>
-
  
-
 <style>
-
-body {
-
-background: #FAF7F3;
-
-font-family: Arial, sans-serif;
-
-}
-
  
-
-h1 {
-
-color: #C76E4A;
-
+:root{
+--terracotta:#C76E4A;
+--sage:#7C8A75;
+--cream:#FAF7F3;
+--beige:#F5EEE6;
+--dark:#2F2F2F;
 }
-
+ 
+*{
+box-sizing:border-box;
+}
+ 
+body{
+margin:0;
+background:var(--cream);
+color:var(--dark);
+font-family:Arial,sans-serif;
+line-height:1.6;
+}
+ 
+.hero{
+background:var(--beige);
+text-align:center;
+padding:80px 20px;
+}
+ 
+.hero h1{
+color:var(--terracotta);
+font-size:64px;
+margin-bottom:10px;
+}
+ 
+.hero h2{
+color:var(--sage);
+font-weight:normal;
+margin-bottom:25px;
+}
+ 
+.hero p{
+max-width:800px;
+margin:auto;
+font-size:20px;
+}
+ 
+.container{
+max-width:1100px;
+margin:auto;
+padding:60px 25px;
+}
+ 
+.section-title{
+color:var(--terracotta);
+text-align:center;
+margin-bottom:30px;
+}
+ 
+.intro{
+text-align:center;
+max-width:800px;
+margin:auto;
+}
+ 
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:40px;
+}
+ 
+.card{
+background:white;
+padding:25px;
+border-radius:16px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+ 
+.card h3{
+color:var(--sage);
+margin-top:0;
+}
+ 
+.coming-soon{
+background:white;
+border-radius:16px;
+padding:30px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+ 
+.coming-soon ul{
+margin:0;
+padding-left:20px;
+}
+ 
+.newsletter{
+text-align:center;
+background:var(--beige);
+padding:60px 25px;
+}
+ 
+.cta-button{
+display:inline-block;
+background:var(--terracotta);
+color:white;
+text-decoration:none;
+padding:15px 25px;
+border-radius:10px;
+margin-top:15px;
+}
+ 
+footer{
+background:var(--dark);
+color:white;
+text-align:center;
+padding:30px 20px;
+}
+ 
+@media (max-width:768px){
+ 
+.hero h1{
+font-size:44px;
+}
+ 
+.hero p{
+font-size:18px;
+}
+ 
+}
+ 
 </style>
-
  
-
 </head>
-
  
-
 <body>
-
  
-
+<section class="hero">
+ 
 <h1>Rebels & Queens</h1>
-
  
-
-<p>Hola Vivi</p>
-
+<h2>Bienestar femenino para cada etapa de la vida</h2>
  
-
+<p>
+Herramientas, inspiración y recursos para mujeres que desean comprender sus hormonas,
+mejorar su bienestar y vivir con más energía, equilibrio y confianza.
+</p>
+ 
+</section>
+ 
+<section class="container">
+ 
+<h2 class="section-title">Hola, soy Vivi</h2>
+ 
+<div class="intro">
+ 
+<p>
+Bienvenida a Rebels & Queens.
+</p>
+ 
+<p>
+He creado este espacio para acompañar a mujeres que desean conocer mejor su cuerpo,
+cuidar su salud y construir una vida más consciente y equilibrada.
+</p>
+ 
+</div>
+ 
+</section>
+ 
+<section class="container">
+ 
+<h2 class="section-title">Nuestras Áreas</h2>
+ 
+<div class="cards">
+ 
+<div class="card">
+ 
+<h3>🌿 Hormonas</h3>
+ 
+<p>
+Aprende a comprender tu ciclo, identificar desequilibrios y apoyar tu bienestar hormonal de forma natural.
+</p>
+ 
+</div>
+ 
+<div class="card">
+ 
+<h3>🤍 Fertilidad</h3>
+ 
+<p>
+Información, herramientas y recursos para mujeres que desean prepararse para un embarazo de forma consciente.
+</p>
+ 
+</div>
+ 
+<div class="card">
+ 
+<h3>✨ Bienestar Natural</h3>
+ 
+<p>
+Hábitos sencillos para mejorar tu energía, cuidar tu digestión y sentirte mejor cada día.
+</p>
+ 
+</div>
+ 
+</div>
+ 
+</section>
+ 
+<section class="container">
+ 
+<div class="coming-soon">
+ 
+<h2 class="section-title">Muy Pronto</h2>
+ 
+<ul>
+<li>Guías gratuitas</li>
+<li>Diario Hormonal</li>
+<li>Fertilidad Consciente</li>
+<li>Ama Tu Hígado</li>
+<li>Plantillas y recursos descargables</li>
+</ul>
+ 
+</div>
+ 
+</section>
+ 
+<section class="newsletter">
+ 
+<h2>Únete a la Comunidad</h2>
+ 
+<p>
+Sé la primera en recibir recursos gratuitos, novedades y herramientas prácticas.
+</p>
+ 
+<a href="mailto:hola@rebelsandqueens.club" class="cta-button">
+Contáctame
+</a>
+ 
+</section>
+ 
+<footer>
+ 
+<p>📧 hola@rebelsandqueens.club</p>
+ 
+<p>© 2026 Rebels & Queens</p>
+ 
+</footer>
+ 
 </body>
-
 </html>
