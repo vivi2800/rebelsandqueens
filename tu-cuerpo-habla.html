@@ -9,11 +9,25 @@
 
 <style>
 
+:root{
+  --cream:#f8f1e7;
+  --peach:#eaac8b;
+  --coral:#e56b6f;
+  --berry:#b56576;
+  --purple:#6d597a;
+  --navy:#355070;
+}
+
+*{
+  box-sizing:border-box;
+}
+
 body{
   margin:0;
-  background:#f8f1e7;
-  color:#355070;
+  background:var(--cream);
+  color:var(--navy);
   font-family:Georgia, serif;
+  line-height:1.7;
 }
 
 .container{
@@ -24,66 +38,178 @@ body{
 
 .logo{
   width:90px;
+  height:auto;
+  display:block;
   margin-bottom:20px;
 }
 
 .eyebrow{
-  color:#b56576;
+  color:var(--berry);
   letter-spacing:4px;
   text-transform:uppercase;
+  font-size:.9rem;
 }
 
 h1{
   font-size:clamp(3rem,8vw,6rem);
   line-height:.9;
   margin:20px 0;
+  color:var(--navy);
+}
+
+h2{
+  margin-bottom:20px;
+  color:var(--navy);
 }
 
 .subtitle{
-  color:#e56b6f;
+  color:var(--coral);
   font-size:1.5rem;
+  margin-bottom:25px;
 }
 
 .intro{
-  color:#6d597a;
-  line-height:1.8;
-  max-width:600px;
+  color:var(--purple);
+  max-width:650px;
+  font-size:1.15rem;
+}
+
+.highlight{
+
+  margin-top:50px;
+
+  background:white;
+
+  padding:35px;
+
+  border-radius:20px;
+
+  box-shadow:0 15px 30px rgba(0,0,0,.05);
+}
+
+.highlight h3{
+  margin-top:0;
 }
 
 .section{
-  margin-top:70px;
+  margin-top:80px;
 }
 
 ul{
   line-height:2;
+  padding-left:20px;
+}
+
+.price-box{
+
+  margin-top:80px;
+
+  padding:40px;
+
+  background:white;
+
+  border-radius:20px;
+
+  text-align:center;
+
+  box-shadow:0 15px 30px rgba(0,0,0,.05);
+}
+
+.old-price{
+
+  color:var(--purple);
+
+  opacity:.6;
+
+  text-decoration:line-through;
+
+  font-size:1.4rem;
+
+  margin-bottom:10px;
 }
 
 .price{
-  font-size:2.5rem;
-  margin:20px 0;
+
+  font-size:4rem;
+
+  font-weight:bold;
+
+  color:var(--navy);
+
+  margin:0;
+}
+
+.launch{
+
+  color:var(--berry);
+
+  margin-top:10px;
 }
 
 .btn{
+
   display:inline-block;
-  padding:14px 28px;
-  background:#e56b6f;
+
+  margin-top:30px;
+
+  padding:16px 30px;
+
+  background:var(--coral);
+
   color:white;
+
   text-decoration:none;
+
   border-radius:999px;
+
+  font-weight:bold;
+}
+
+.btn:hover{
+
+  background:var(--berry);
+}
+
+.footer-note{
+
+  margin-top:60px;
+
+  color:var(--purple);
+
+  text-align:center;
+}
+
+.back{
+
+  display:inline-block;
+
+  margin-top:20px;
+
+  color:var(--berry);
+
+  text-decoration:none;
+}
+
+@media(max-width:768px){
+
+  .container{
+    padding:50px 25px;
+  }
+
+  .price{
+    font-size:3rem;
+  }
+
 }
 
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
-<img
-  src="rond logo zonder tekst.png"
-  alt="Rebels & Queens"
-  class="logo">
+<img src="rond logo zonder tekst.png" alt="Rebels & Queens logo" class="logo">
 
 <p class="eyebrow">
 SOFT REBELLION · 01
@@ -98,51 +224,125 @@ TU CUERPO HABLA
 </p>
 
 <p class="intro">
-Una guía práctica para comprender mejor tu energía,
-tu sueño, tu cuerpo y los cambios que llegan con cada etapa de la vida.
+
+Tu cuerpo lleva años intentando decirte algo.
+
+Quizá ha llegado el momento de escucharlo.
+
 </p>
 
+<div class="highlight">
+
+<h3>¿Te suena familiar?</h3>
+
+<p>
+
+✓ Te despiertas cansada aunque hayas dormido.<br>
+✓ Tu energía ya no es la misma.<br>
+✓ Tu cuerpo parece haber cambiado de idioma.<br>
+✓ Sabes que algo está pasando, pero no sabes exactamente qué.
+
+</p>
+
+</div>
+
 <div class="section">
 
-<h2>¿Es para ti?</h2>
+<h2>
+Lo que descubrirás
+</h2>
 
 <ul>
-<li>Tu energía ha cambiado</li>
-<li>No te reconoces del todo en tu cuerpo actual</li>
-<li>Quieres entender mejor tus señales físicas</li>
-<li>Buscas información clara y accesible</li>
-<li>Quieres comenzar a escucharte con más atención</li>
+
+<li>Por qué tu energía cambia.</li>
+
+<li>Qué señales físicas merecen atención.</li>
+
+<li>Cómo observar tu cuerpo sin obsesionarte.</li>
+
+<li>Qué patrones aparecen cuando empiezas a escuchar.</li>
+
+<li>Cómo recuperar confianza en tus propias señales.</li>
+
 </ul>
 
 </div>
 
 <div class="section">
 
-<h2>¿Qué incluye?</h2>
+<h2>
+¿Qué incluye?
+</h2>
 
 <ul>
-<li>46 páginas</li>
-<li>Body Notes</li>
-<li>Reflexiones guiadas</li>
-<li>Ejercicios prácticos</li>
-<li>Observación durante 7 días</li>
+
+<li>46 páginas de lectura práctica y accesible.</li>
+
+<li>Body Notes para reflexionar.</li>
+
+<li>Preguntas guiadas.</li>
+
+<li>Ejercicios prácticos.</li>
+
+<li>Plan de observación corporal de 7 días.</li>
+
 </ul>
 
 </div>
 
 <div class="section">
 
-<h2>Precio de lanzamiento</h2>
+<h2>
+No terminarás este libro con más información.
+</h2>
+
+<p class="intro">
+
+Terminarás con más claridad.
+
+Porque entender tu cuerpo cambia la forma en que entiendes tu vida.
+
+</p>
+
+</div>
+
+<div class="price-box">
+
+<h2>
+Precio de lanzamiento
+</h2>
+
+<p class="old-price">
+€14
+</p>
 
 <p class="price">
 €9
 </p>
 
+<p class="launch">
+Oferta de lanzamiento por tiempo limitado.
+</p>
+
 <a href="#" class="btn">
-Comprar próximamente
+QUIERO ESCUCHAR A MI CUERPO
 </a>
 
 </div>
+
+<p class="footer-note">
+
+Soft Rebellion · 01
+
+<br><br>
+
+La primera guía de una colección creada para mujeres que quieren entenderse mejor.
+
+</p>
+
+<a href="index.html" class="back">
+← Volver a Rebels & Queens
+</a>
 
 </div>
 
