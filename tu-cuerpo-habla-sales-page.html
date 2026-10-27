@@ -7,7 +7,6 @@
 <title>Tu Cuerpo Habla | Rebels & Queens</title>
 
 <style>
-
 :root{
     --cream:#f8f1e7;
     --coral:#e56b6f;
@@ -37,6 +36,7 @@ body{
 
 .logo{
     width:110px;
+    display:block;
     margin-bottom:25px;
 }
 
@@ -58,18 +58,25 @@ h1{
 h2{
     margin-bottom:20px;
     color:var(--navy);
+    font-size:2rem;
 }
 
 .subtitle{
     color:var(--coral);
     font-size:1.8rem;
-    margin-bottom:40px;
+    margin-bottom:20px;
+}
+
+.product-info{
+    color:var(--berry);
+    font-weight:bold;
+    margin-bottom:35px;
 }
 
 .intro{
     font-size:1.2rem;
     color:var(--purple);
-    max-width:750px;
+    max-width:760px;
 }
 
 .section{
@@ -83,12 +90,8 @@ h2{
     box-shadow:0 15px 30px rgba(0,0,0,.05);
 }
 
-.card h3{
-    margin-bottom:15px;
-}
-
 ul{
-    padding-left:20px;
+    padding-left:25px;
 }
 
 li{
@@ -105,8 +108,8 @@ li{
 
 .testimonial-author{
     margin-top:15px;
-    color:var(--berry);
     font-weight:bold;
+    color:var(--berry);
 }
 
 .price-box{
@@ -119,32 +122,31 @@ li{
 }
 
 .old-price{
+    font-size:1.3rem;
     text-decoration:line-through;
     color:var(--purple);
     opacity:.6;
-    font-size:1.3rem;
 }
 
 .price{
     font-size:4rem;
-    font-weight:bold;
     color:var(--navy);
+    font-weight:bold;
     margin:15px 0;
 }
 
 .launch{
     color:var(--berry);
-    font-size:1.05rem;
+    margin-bottom:20px;
 }
 
 .btn{
     display:inline-block;
-    margin-top:30px;
-    padding:18px 40px;
-    border-radius:999px;
     background:var(--coral);
     color:white;
     text-decoration:none;
+    padding:18px 36px;
+    border-radius:999px;
     font-weight:bold;
     transition:.3s;
 }
@@ -162,23 +164,44 @@ li{
     margin-bottom:30px;
 }
 
+.faq-item strong{
+    display:block;
+    margin-bottom:8px;
+}
+
 .footer{
-    margin-top:80px;
     text-align:center;
+    margin-top:80px;
     color:var(--purple);
 }
 
 .back{
     display:inline-block;
-    margin-top:20px;
+    margin-top:25px;
     color:var(--berry);
     text-decoration:none;
 }
 
-@media(max-width:768px){
+.back:hover{
+    text-decoration:underline;
+}
+
+@media (max-width:768px){
 
     .container{
-        padding:50px 25px;
+        padding:50px 24px;
+    }
+
+    h1{
+        font-size:4rem;
+    }
+
+    .subtitle{
+        font-size:1.4rem;
+    }
+
+    h2{
+        font-size:1.7rem;
     }
 
     .price{
@@ -189,8 +212,17 @@ li{
         padding:35px 25px;
     }
 
-}
+    .card,
+    .testimonial{
+        padding:25px;
+    }
 
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+}
 </style>
 </head>
 
@@ -198,9 +230,7 @@ li{
 
 <div class="container">
 
-<img src="rond logo zonder tekst.png"
-     alt="Rebels & Queens logo"
-     class="logo">
+<img src="rond logo zonder tekst.png" alt="Rebels & Queens logo" class="logo">
 
 <p class="eyebrow">
 SOFT REBELLION · 01
@@ -214,24 +244,31 @@ TU CUERPO<br>HABLA
 10 señales que merece la pena escuchar.
 </p>
 
+<p class="product-info">
+✨ Guía digital descargable · 46 páginas · Lectura en menos de 2 horas
+</p>
+
 <p class="intro">
-Tu cuerpo lleva años intentando decirte algo.
-Quizá los cambios que notas no son una coincidencia.
-Quizá ha llegado el momento de dejar de luchar contra ellos y empezar a entenderlos.
+Tu cuerpo lleva años acompañándote.
+
+A veces intenta hablarte en susurros.
+Otras veces necesita levantar la voz.
+
+Y quizá, por primera vez, ha llegado el momento de escucharlo con curiosidad, con cariño y sin miedo.
 </p>
 
 <div class="section">
 
 <div class="card">
 
-<h3>¿Te suena familiar?</h3>
+<h3>Tal vez te reconozcas aquí</h3>
 
 <p>
-✓ Te despiertas cansada aunque hayas dormido.<br>
-✓ Tu energía ya no es la misma.<br>
-✓ Tu cuerpo parece haber cambiado de idioma.<br>
-✓ Hay días en los que no te reconoces.<br>
-✓ Sabes que algo está pasando, pero no sabes exactamente qué.
+✓ Te despiertas cansada aunque hayas descansado.<br>
+✓ Hay días en los que ya no entiendes las señales de tu cuerpo.<br>
+✓ Tu energía sube y baja sin explicación aparente.<br>
+✓ A veces te preguntas qué está cambiando exactamente.<br>
+✓ Y, en el fondo, sientes que tu cuerpo intenta decirte algo importante.
 </p>
 
 </div>
@@ -240,26 +277,30 @@ Quizá ha llegado el momento de dejar de luchar contra ellos y empezar a entende
 
 <div class="section">
 
-<h2>Lo que descubrirás</h2>
+<h2>
+Lo que tu cuerpo lleva tiempo intentando contarte
+</h2>
 
 <ul>
 <li>Por qué tu energía cambia y qué puede haber detrás.</li>
-<li>Qué señales físicas merece la pena observar.</li>
-<li>Cómo escuchar tu cuerpo sin ansiedad ni obsesión.</li>
-<li>Cómo identificar patrones y señales repetidas.</li>
-<li>Cómo recuperar la confianza en tu propia intuición corporal.</li>
-<li>Una nueva forma de relacionarte contigo misma.</li>
+<li>Qué señales merece la pena observar con más atención.</li>
+<li>Cómo escuchar tu cuerpo sin miedo ni obsesión.</li>
+<li>Qué patrones aparecen cuando empiezas a prestarle atención.</li>
+<li>Cómo recuperar la confianza en tus propias sensaciones.</li>
+<li>Cómo construir una relación más amable contigo misma.</li>
 </ul>
 
 </div>
 
 <div class="section">
 
-<h2>¿Qué incluye?</h2>
+<h2>
+Una guía para volver a escucharte
+</h2>
 
 <ul>
 <li>46 páginas de lectura clara y accesible.</li>
-<li>Body Notes para la reflexión personal.</li>
+<li>Body Notes para reflexionar.</li>
 <li>Preguntas guiadas.</li>
 <li>Ejercicios prácticos.</li>
 <li>Plan de observación corporal de 7 días.</li>
@@ -272,24 +313,29 @@ Quizá ha llegado el momento de dejar de luchar contra ellos y empezar a entende
 
 <div class="section">
 
-<h2>¿Por qué esta guía es diferente?</h2>
+<h2>
+¿Por qué esta guía es diferente?
+</h2>
 
 <p class="intro">
-No intenta darte más reglas, más presión ni más exigencias.
+Esta guía no pretende decirte lo que deberías hacer.
 
-Te ayuda a recuperar algo mucho más importante:
-la capacidad de escuchar lo que tu cuerpo lleva años intentando contarte.
+No viene a corregirte ni a exigirte más.
+
+Ha sido creada para ayudarte a observar, comprender y acompañar los cambios que estás viviendo con más calma, más claridad y más confianza.
 </p>
 
 </div>
 
 <div class="section">
 
-<h2>Lo que dicen las lectoras</h2>
+<h2>
+Lo que dicen las lectoras
+</h2>
 
 <div class="testimonial">
 <p>
-"Por primera vez sentí que alguien explicaba exactamente lo que estaba viviendo sin hacerme sentir rara ni exagerada."
+“Durante mucho tiempo pensé que mi cuerpo estaba fallando. Esta guía me ayudó a entender que simplemente estaba intentando hablar conmigo.”
 </p>
 
 <p class="testimonial-author">
@@ -299,7 +345,7 @@ María, 47 años
 
 <div class="testimonial">
 <p>
-"Lo terminé en una tarde y me ayudó a entender señales que llevaba meses ignorando."
+“Por primera vez sentí alivio. No porque tuviera todas las respuestas, sino porque empecé a hacerme las preguntas correctas.”
 </p>
 
 <p class="testimonial-author">
@@ -309,9 +355,25 @@ Claudia, 51 años
 
 </div>
 
+<div class="section">
+
+<h2>
+No necesitas más información.
+</h2>
+
+<p class="intro">
+Necesitas un espacio para escucharte.
+
+Porque cuando empiezas a comprender tu cuerpo, también empiezas a comprenderte un poco más a ti misma.
+</p>
+
+</div>
+
 <div class="price-box">
 
-<h2>Precio especial de lanzamiento</h2>
+<h2>
+Precio especial de lanzamiento
+</h2>
 
 <p class="old-price">
 €14
@@ -322,14 +384,11 @@ Claudia, 51 años
 </p>
 
 <p class="launch">
-Oferta de lanzamiento por tiempo limitado.
-Después volverá a €14.
+Una invitación para empezar hoy. Disponible por €9 durante el lanzamiento.
 </p>
 
-<a href="https://YOUR-LEMON-SQUEEZY-LINK"
-   class="btn"
-   target="_blank">
-   SÍ, QUIERO MI GUÍA
+<a href="https://YOUR-LEMON-SQUEEZY-LINK" class="btn">
+SÍ, QUIERO ESCUCHAR A MI CUERPO
 </a>
 
 <div class="guarantees">
@@ -342,26 +401,28 @@ Después volverá a €14.
 
 <div class="section">
 
-<h2>Preguntas frecuentes</h2>
+<h2>
+Preguntas frecuentes
+</h2>
 
 <div class="faq-item">
-<strong>¿Es un libro médico?</strong><br>
-No. Es una guía práctica para ayudarte a comprender mejor las señales de tu cuerpo.
+<strong>¿Es un libro médico?</strong>
+No. Es una guía cercana y práctica que te ayudará a comprender mejor las señales de tu cuerpo y a mirarlas con más claridad y confianza.
 </div>
 
 <div class="faq-item">
-<strong>¿Necesito conocimientos previos?</strong><br>
-No. Está escrita en lenguaje sencillo y accesible.
+<strong>¿Necesito conocimientos previos?</strong>
+No. Está escrita en un lenguaje sencillo y accesible para cualquier lectora.
 </div>
 
 <div class="faq-item">
-<strong>¿Cómo recibiré el libro?</strong><br>
-Recibirás el PDF inmediatamente después de la compra.
+<strong>¿Cómo recibiré el libro?</strong>
+Recibirás el PDF inmediatamente después de completar la compra.
 </div>
 
 <div class="faq-item">
-<strong>¿Puedo leerlo desde el móvil?</strong><br>
-Sí. Funciona perfectamente en móvil, tablet y ordenador.
+<strong>¿Puedo leerlo desde el móvil?</strong>
+Sí. Puedes leerlo cómodamente desde móvil, tablet o ordenador.
 </div>
 
 </div>
@@ -375,7 +436,7 @@ SOFT REBELLION · 01
 <br>
 
 <p>
-La primera guía de una colección creada para mujeres que quieren comprenderse mejor y reconciliarse con los cambios de su cuerpo.
+La primera guía de una colección creada para mujeres que desean escucharse con más atención, comprenderse con más profundidad y acompañarse con más amabilidad.
 </p>
 
 <a href="index.html" class="back">
